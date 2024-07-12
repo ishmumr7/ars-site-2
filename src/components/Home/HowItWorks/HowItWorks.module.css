@@ -1,0 +1,80 @@
+.how {
+  position: relative;
+}
+
+.bg_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg_container div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.how_container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  color: #000;
+}
+
+.how_left,
+.how_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.how_left {
+  flex-basis: 48%;
+  border: 1px dotted black;
+  padding-left: 5%;
+  padding-right: 2%;
+}
+
+.how_left h3 {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.how_left h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.how_left p {
+  text-align: justify;
+  margin-top: 3%;
+  font-size: 20px;
+  max-width: 82%;
+}
+
+.how_right {
+  flex-basis: 48%;
+  padding-right: 5%;
+  padding-left: 2%;
+}
+
+.amr_name {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 5%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.amr_container {
+  position: relative;
+  height: calc(500px * 0.42);
+  width: 500px;
+}

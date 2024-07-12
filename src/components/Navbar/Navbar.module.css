@@ -4,13 +4,21 @@
   left: 0;
   width: 100%;
   height: auto;
-  padding-left: 5%;
+  padding-left: 2%;
   padding-right: 5%;
   background: transparent;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar span {
+  width: 150px;
+  height: 60px;
+  position: relative;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar div {
@@ -20,15 +28,19 @@
 .navbar div a {
   padding: 40px 0 20px;
   margin: 0 15px 20px 15px;
-  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 20px;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .navbar div a:hover {
-  text-decoration: underline;
+  transform: translateY(-5px);
+  color: var(--ars-secondary-color);
 }

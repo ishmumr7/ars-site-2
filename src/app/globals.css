@@ -1,10 +1,48 @@
 :root {
-  --ars-primary-color: #000;
-  --ars-secondary-color: #fff;
+  --ars-primary-color: #4f5b66;
+  --ars-secondary-color: #21aae2;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-radius: 30px;
+  border: 1px solid black;
+  outline: none;
+  color: #fff;
+  background: #000;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-arrow {
+  margin-left: 10px;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.bg-image {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.for-transition {
+  transition: all 0.3s ease-in-out;
 }
