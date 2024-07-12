@@ -8,6 +8,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
+  z-index: -1;
 }
 
 .bg_container div {
@@ -22,7 +23,6 @@
   background: rgba(255, 255, 255, 0.7);
   height: 100vh;
   width: 100%;
-  z-index: 1;
   color: #000;
 }
 
@@ -36,9 +36,8 @@
 
 .how_left {
   flex-basis: 48%;
-  border: 1px dotted black;
-  padding-left: 5%;
-  padding-right: 2%;
+  padding-left: 8%;
+  padding-right: 6%;
 }
 
 .how_left h3 {
@@ -56,7 +55,6 @@
   text-align: justify;
   margin-top: 3%;
   font-size: 20px;
-  max-width: 82%;
 }
 
 .how_right {
@@ -75,6 +73,11 @@
 
 .amr_container {
   position: relative;
-  height: calc(500px * 0.42);
-  width: 500px;
+  height: calc(80% * 0.42);
+  width: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+.amr_container:hover {
+  transform: scale(1.1);
 }

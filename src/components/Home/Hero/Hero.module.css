@@ -10,12 +10,19 @@
   position: absolute;
   top: 20px;
   left: 40px;
+  z-index: 2;
 }
 
 .vision_div div {
   position: relative;
   width: calc(1.4 * 80px);
   height: 80px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.vision_div div:hover {
+  transform: scale(1.1);
 }
 
 .hero_left {

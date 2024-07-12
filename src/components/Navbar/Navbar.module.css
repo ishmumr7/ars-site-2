@@ -13,12 +13,16 @@
   justify-content: space-between;
 }
 
-.navbar span {
+.nav_logo {
   width: 150px;
   height: 60px;
   position: relative;
-  visibility: hidden;
+  opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.nav_logo.show_logo {
+  opacity: 1;
 }
 
 .navbar div {
