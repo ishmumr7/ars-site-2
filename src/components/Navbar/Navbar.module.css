@@ -4,6 +4,8 @@
   left: 0;
   width: 100%;
   height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
   background: transparent;
   z-index: 1;
   display: flex;
@@ -11,19 +13,22 @@
   justify-content: space-between;
 }
 
-.navbar ul {
-  display: flex;
+.navbar div {
+  display: inline-flex;
 }
 
-.navbar ul li {
+.navbar div a {
   padding: 40px 0 20px;
   margin: 0 15px 20px 15px;
   list-style: none;
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.navbar ul li:hover {
+.navbar div a:hover {
   text-decoration: underline;
 }

@@ -1,17 +1,17 @@
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="navbar container">
+    <nav className={styles.navbar}>
       <span>Placeholder</span>
-      <ul>
-        <li>Home</li>
-        <li>Product</li>
-        <li>Custom Solution</li>
-        <li>About</li>
-        <li>Contact Us</li>
-      </ul>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Custom Solutions</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
     </nav>
   );
 }
