@@ -1,0 +1,90 @@
+.construction {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg_image div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.construction button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 1px solid #d3d3d3;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  padding-top: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.construction button:hover {
+  transform: scale(1.1);
+  background: #000;
+  color: #fff;
+}
+
+.construction_container {
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  border: 1px solid #d3d3d3;
+}
+
+.construction_container div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.construction_container span {
+  font-size: 100px;
+  margin-bottom: -3%;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.construction_container span:hover {
+  animation: rotateSym 2s linear infinite;
+}
+
+.construction_container p {
+  font-size: 20px;
+}
+
+@keyframes rotateSym {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

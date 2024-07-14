@@ -1,13 +1,13 @@
 import styles from "./About.module.css";
 import Image from "next/image";
-import ars_w1 from "../../../../public/assets/warehouse_bg.png";
+import bg_image from "../../../../public/assets/warehouse_bg.png";
 import jawahir from "../../../../public/assets/JAWAHIR-1.jpg";
 
 export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.about_bg}>
-        <Image src={ars_w1} alt="ARS" fill style={{ objectFit: "cover" }} />
+        <Image src={bg_image} alt="ARS" fill style={{ objectFit: "cover" }} />
       </div>
       <div className={styles.about_bg_mask}></div>
       <div className={styles.about_who}>

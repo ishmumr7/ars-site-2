@@ -4,15 +4,19 @@ import Hero from "@/components/Home/Hero/Hero";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
 import News from "@/components/Home/News/News";
 import Contact from "@/components/Home/Contact/Contact";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div className={styles.homepage}>
-      <Hero />
-      <HowItWorks />
-      <News />
-      <About />
-      <Contact />
-    </div>
+    <>
+      <Navbar />
+      <div className={styles.homepage}>
+        <Hero />
+        <HowItWorks />
+        <News />
+        <About />
+        <Contact />
+      </div>
+    </>
   );
 }

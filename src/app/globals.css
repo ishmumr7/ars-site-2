@@ -1,6 +1,8 @@
 :root {
   --ars-primary-color: #4f5b66;
   --ars-secondary-color: #21aae2;
+  --loader-dimension: 150px;
+  --loader-thickness: 10px;
 }
 
 * {
@@ -41,4 +43,46 @@
 .bg-image {
   object-fit: cover;
   z-index: -1;
+}
+
+.loading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d3d3d3;
+}
+
+.loading div {
+  font-size: 100px;
+  text-align: center;
+  height: var(--loader-dimension);
+  width: var(--loader-dimension);
+  border-radius: 50%;
+  background: transparent;
+  border: var(--loader-thickness) solid var(--ars-secondary-color);
+  position: relative;
+  animation: loadAnimation 1s linear infinite;
+}
+
+.loading div::after {
+  position: absolute;
+  top: calc(var(--loader-thickness) * -1);
+  right: calc(var(--loader-thickness) * -1);
+  content: "";
+  display: block;
+  height: calc(var(--loader-dimension) * 0.5);
+  width: calc(var(--loader-dimension) * 0.5);
+  background-color: #d3d3d3;
+  z-index: 10;
+}
+
+@keyframes loadAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

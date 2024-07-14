@@ -4,7 +4,10 @@ export default function Contact() {
   return (
     <div className={styles.contact}>
       <div className={styles.contact_main}>
-        <div className={styles.contact_container}></div>
+        <div className={styles.contact_container}>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className={styles.footer}></div>
     </div>
