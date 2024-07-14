@@ -1,12 +1,15 @@
 .how {
   position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .bg_container {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -32,12 +35,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .how_left {
   flex-basis: 48%;
-  padding-left: 8%;
-  padding-right: 6%;
 }
 
 .how_left h3 {
@@ -55,12 +58,11 @@
   text-align: justify;
   margin-top: 3%;
   font-size: 20px;
+  max-width: 75%;
 }
 
 .how_right {
   flex-basis: 48%;
-  padding-right: 5%;
-  padding-left: 2%;
 }
 
 .amr_name {

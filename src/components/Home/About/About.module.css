@@ -1,0 +1,97 @@
+.about {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about_bg_mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about_who,
+.about_partner {
+  width: 80%;
+  border-radius: 10px;
+  padding: 1%;
+  padding-top: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  margin-top: 8%;
+  background: #fff;
+  z-index: 1;
+}
+
+.about_who h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  /* color: var(--ars-secondary-color); */
+}
+
+.about_who p {
+  text-align: justify;
+  /* color: var(--ars-primary-color); */
+}
+
+.about_who h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 2.5%;
+  /* color: var(--ars-secondary-color); */
+}
+
+.about_partner {
+  padding: 1%;
+  margin-top: 2%;
+  height: stretch;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_partner h1 {
+  flex-basis: 40%;
+  font-weight: 500;
+}
+
+.partner_image {
+  flex-basis: 40%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.partner_image div {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  margin-right: 37%;
+  margin-right: 13%;
+}
+
+.line {
+  background-color: #000;
+  width: 2px;
+  height: 100%;
+}

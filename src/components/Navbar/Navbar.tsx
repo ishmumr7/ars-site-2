@@ -7,12 +7,25 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [logo, showLogo] = useState(false);
+  const [logo, setLogo] = useState(false);
+
+  function handleChange() {
+    const htmlDoc = document.documentElement;
+    const percentScrolled = (htmlDoc.scrollTop / htmlDoc.clientHeight) * 100;
+
+    percentScrolled > 85 ? setLogo(true) : setLogo(false);
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 600 ? showLogo(true) : showLogo(false);
-    });
+    window.addEventListener("scroll", handleChange);
+    window.addEventListener("resize", handleChange);
+
+    handleChange();
+
+    return () => {
+      window.removeEventListener("scroll", handleChange);
+      window.removeEventListener("resize", handleChange);
+    };
   }, []);
 
   return (
