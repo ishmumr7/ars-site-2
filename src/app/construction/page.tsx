@@ -7,11 +7,6 @@ import Image from "next/image";
 export default function page() {
   return (
     <div className={styles.construction}>
-      <div className={styles.bg_image}>
-        <div>
-          <Image src={ars_w1} alt="Background" fill />
-        </div>
-      </div>
       <NextLink href="/">
         <button>
           <IoArrowBack />
