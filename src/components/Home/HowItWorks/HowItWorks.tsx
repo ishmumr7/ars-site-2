@@ -13,14 +13,16 @@ export default function HowItWorks() {
       </div>
       <div className={styles.how_container}>
         <div className={styles.how_left}>
-          <h3>One Stop Solution for</h3>
-          <h1>Industry 4.0 AMR</h1>
-          <p>
-            HOME PRODUCT CUSTOM SOLUTION ABOUT CONTACT One Stop Solution for
-            INDUSTRY 4.0 AMR Designed to optimize your workflows, increase your
-            productivity, and reduce your costs. Whether you need to transport
-            materials or deliver goods, we have the right solution for you.
-          </p>
+          <div>
+            <h3>One Stop Solution for</h3>
+            <h1>Industry 4.0 AMR</h1>
+            <p>
+              One Stop Solution for INDUSTRY 4.0 AMR Designed to optimize your
+              workflows, increase your productivity, and reduce your costs.
+              Whether you need to transport materials or deliver goods, we have
+              the right solution for you.
+            </p>
+          </div>
         </div>
         <div className={styles.how_right}>
           <div className={styles.amr_name}>
