@@ -5,7 +5,7 @@ import a_500 from "../../../../public/assets/A500_render_cropped.png";
 
 export default function HowItWorks() {
   return (
-    <div className={styles.how}>
+    <div className={styles.how} id="how">
       <div className={styles.bg_container}>
         <div>
           <Image className="bg-image" src={bg_pic} alt="Background" fill />

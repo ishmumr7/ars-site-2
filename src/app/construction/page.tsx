@@ -22,7 +22,7 @@ export default function page() {
           <span>
             <IoConstructOutline />
           </span>
-          <p>This Page is still under Construction...</p>
+          <p>Please come back later, doing some minor adjustments...</p>
         </div>
       </div>
     </div>

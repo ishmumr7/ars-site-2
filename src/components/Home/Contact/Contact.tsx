@@ -1,6 +1,4 @@
 import styles from "./Contact.module.css";
-import telephone_img from "../../../../public/assets/telephone_converted.png";
-import Image from "next/image";
 import { CSSProperties } from "react";
 import {
   FaSquareInstagram,
@@ -11,48 +9,53 @@ import {
 import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
-  const ImageStyles: CSSProperties = {
-    objectFit: "cover",
-    borderTopLeftRadius: "10px",
-    borderBottomLeftRadius: "10px",
-  };
-
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <div className={styles.contact_main}>
         <div className={styles.contact_container}>
-          <div className={styles.contact_img}>
-            <div>
-              <Image
-                src={telephone_img}
-                alt="Contact Us"
-                fill
-                style={ImageStyles}
-              />
-            </div>
+          <div className={styles.contact_title}>
+            <div>Contact us for a solution tailored to meet your needs</div>
           </div>
           <div className={styles.contact_details}>
-            <div className={styles.item}>
-              <FaSquareInstagram />
-              <div className={styles.item_text}>
-                <div className={styles.item_title}>Instagram</div>
-                <div className={styles.item_other}>@arsystems.sa</div>
+            <a
+              href="https://www.instagram.com/arsystems.sa?igsh=ZTRqZ3d6NDh0eXYw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.item}>
+                <FaSquareInstagram />
+                <div className={styles.item_text}>
+                  <div className={styles.item_title}>Instagram</div>
+                  <div className={styles.item_other}>@arsystems.sa</div>
+                </div>
               </div>
-            </div>
-            <div className={styles.item}>
-              <FaLinkedin />
-              <div className={styles.item_text}>
-                <div className={styles.item_title}>LinkedIn</div>
-                <div className={styles.item_other}></div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/advanced-robotics-systems/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.item}>
+                <FaLinkedin />
+                <div className={styles.item_text}>
+                  <div className={styles.item_title}>LinkedIn</div>
+                  <div className={styles.item_other}></div>
+                </div>
               </div>
-            </div>
-            <div className={styles.item}>
-              <FaFacebook />
-              <div className={styles.item_text}>
-                <div className={styles.item_title}>Facebook</div>
-                <div className={styles.item_other}></div>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61562469073840&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.item}>
+                <FaFacebook />
+                <div className={styles.item_text}>
+                  <div className={styles.item_title}>Facebook</div>
+                  <div className={styles.item_other}></div>
+                </div>
               </div>
-            </div>
+            </a>
             <div className={`${styles.item} ${styles.item_big}`}>
               <MdEmail />
               <div className={`${styles.item_text} ${styles.item_text_big}`}>
@@ -84,7 +87,13 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <p>&copy; 2024 ARS. All Rights Reserved</p>
+        <ul>
+          <li>Terms and Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
     </div>
   );
 }

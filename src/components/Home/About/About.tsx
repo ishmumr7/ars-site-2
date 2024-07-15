@@ -5,7 +5,7 @@ import jawahir from "../../../../public/assets/JAWAHIR-1.jpg";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.about_bg}>
         <Image src={bg_image} alt="ARS" fill style={{ objectFit: "cover" }} />
       </div>
@@ -33,7 +33,13 @@ export default function About() {
         <div className={styles.line}></div>
         <div className={styles.partner_image}>
           <div>
-            <Image className="image" src={jawahir} alt="Jawahir" fill />
+            <a
+              href="https://www.jawahirschool.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image className="image" src={jawahir} alt="Jawahir" fill />
+            </a>
           </div>
         </div>
       </div>

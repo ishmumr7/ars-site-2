@@ -69,11 +69,7 @@
   font-size: 100px;
   margin-bottom: -3%;
   text-align: center;
-  transition: all 1s ease-in-out;
-}
-
-.construction_container span:hover {
-  animation: rotateSym 2s linear infinite;
+  animation: rotateSym 5s linear infinite;
 }
 
 .construction_container p {

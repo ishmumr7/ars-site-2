@@ -10,7 +10,7 @@ export default function News() {
     borderTopLeftRadius: "10px",
   };
   return (
-    <div className={styles.news}>
+    <div className={styles.news} id="news">
       <div className={styles.news_header}>
         <span>News</span>
         <span className={styles.placeholder}></span>

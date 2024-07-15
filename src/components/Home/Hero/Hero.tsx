@@ -7,11 +7,17 @@ import NextLink from "next/link";
 
 export default function Hero() {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="hero">
       <div className={styles.vision_div}>
-        <div>
-          <Image className="image" src={vision_2030} alt="Vision 2030" fill />
-        </div>
+        <a
+          href="https://www.vision2030.gov.sa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>
+            <Image className="image" src={vision_2030} alt="Vision 2030" fill />
+          </div>
+        </a>
       </div>
       <div className={styles.hero_left}>
         <div>

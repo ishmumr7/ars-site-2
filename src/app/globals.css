@@ -78,6 +78,13 @@
   z-index: 10;
 }
 
+a {
+  text-decoration: none;
+  margin: unset;
+  padding: unset;
+  display: inherit;
+}
+
 @keyframes loadAnimation {
   from {
     transform: rotate(0deg);

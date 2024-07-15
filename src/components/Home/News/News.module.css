@@ -44,10 +44,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
 .card_image {
   position: relative;
   border-top-right-radius: 10px;

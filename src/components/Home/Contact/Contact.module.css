@@ -26,15 +26,25 @@
   justify-content: space-between;
 }
 
-.contact_img {
+.contact_title {
   height: 100%;
   flex-basis: 40%;
+  background: var(--ars-primary-color);
+  color: #d3d3d3;
+  text-align: center;
+  text-transform: uppercase;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact_img div {
-  position: relative;
-  height: 100%;
-  width: 100%;
+.contact_title div {
+  width: 95%;
+  height: fit-content;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .contact_details {
@@ -47,8 +57,13 @@
   justify-content: space-evenly;
 }
 
-.item {
+.contact_details a {
   flex-basis: 23%;
+}
+
+.item {
+  /* flex-basis: 23%; */
+  width: 100%;
   font-size: 50px;
   height: fit-content;
   border-radius: 10px;
@@ -57,14 +72,28 @@
   display: flex;
   align-items: center;
   background: #fff;
-  color: var(--ars-primary-color);
+  color: #000;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .item_big {
-  flex-basis: 87%;
+  flex-basis: 85%;
   font-size: 70px;
   cursor: unset;
+}
+
+.item_big:hover {
+  background: #fff;
+  color: #000;
+  transform: none;
+  border: none;
 }
 
 .item_text {
@@ -103,4 +132,16 @@
   width: 100%;
   height: stretch;
   background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
 }
