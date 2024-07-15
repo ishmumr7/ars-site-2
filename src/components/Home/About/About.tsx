@@ -20,7 +20,7 @@ export default function About() {
         </p>
         <h3>What we Aim to Server our Customers</h3>
         <p>
-          Our Mission <strong>"Full House Automation"</strong>
+          Our Mission <strong>&quot;Full House Automation&quot;</strong>
           <br />
           This system consists of the following three categories mentioned
           below, our target is to implement the following systems in a factory

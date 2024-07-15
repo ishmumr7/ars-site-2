@@ -29,10 +29,10 @@ export default function News() {
               automation technology in the Saudi Vision 20230, promising
               revolutionary solutions for various industries.
               <br />
-              "We thrive on solving the pain points of industry where automation
-              and robotics systems can be implemented. High-quality output,
-              required cycle time, and easy maintenance are some of our primary
-              objectives when building a system."
+              &quot;We thrive on solving the pain points of industry where
+              automation and robotics systems can be implemented. High-quality
+              output, required cycle time, and easy maintenance are some of our
+              primary objectives when building a system.&quot;
               <br />
               Founder & CTO - Abrar Hussain
             </p>
