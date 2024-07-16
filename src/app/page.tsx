@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className={styles.homepage}>
+      <div className={styles.homepage} id="homepage">
         <Hero />
         <HowItWorks />
         <News />

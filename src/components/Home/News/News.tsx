@@ -1,5 +1,5 @@
 import styles from "./News.module.css";
-import n_1 from "../../../../public/assets/N_1.jpeg";
+import n_1 from "../../../../public/assets/N_1_cropped.jpeg";
 import { CSSProperties } from "react";
 import Image from "next/image";
 

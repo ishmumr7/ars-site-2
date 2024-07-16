@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  /* scroll-snap-align: start; */
 }
 
 .about_bg {
@@ -29,6 +30,7 @@
 .about_who,
 .about_partner {
   width: 80%;
+  height: fit-content;
   border-radius: 10px;
   padding: 1%;
   padding-top: 0;
