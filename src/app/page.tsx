@@ -6,11 +6,13 @@ import News from "@/components/Home/News/News";
 import Contact from "@/components/Home/Contact/Contact";
 import Navbar from "@/components/Navbar/Navbar";
 
+
+
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className={styles.homepage} id="homepage">
+      <div className={`${styles.homepage}`} id="homepage">
         <Hero />
         <HowItWorks />
         <News />
